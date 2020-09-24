@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>comercial site</title>
+	<style>
+		body{
+			margin: 0px;
+			padding:0px;
+			background-image: url("https://i.stack.imgur.com/45Edf.jpg");
+		}
+
+		#nav{
+			position:fixed;
+			width: 100%;
+			height:80px;
+			background-color:#82B6CC
+			
+
+
+		}
+
+		#logo{
+			width: 100px;
+			height: 70px;
+			margin: 5px;
+			float: left;
+		}
+		#header{
+			font-size: 40px;
+			float: left;
+		}
+		#search{
+			width: 30%;
+			height: 40px;
+			border-radius: 15px;
+			margin: 17px;
+			margin-left: 100px; 
+		}
+		h2{
+			float:right;
+			margin-top: 45px;
+			margin-right:70px;
+		}
+		
+
+					
+	#cartlogo{
+		float: right;
+		width: 70px;
+		height: 60px;
+		margin: 8px;
+		margin-right: 100px;
+	    }
+
+	    #count{
+	    	float: right;
+	    	font-size: 30px;
+	    	margin: 15px;
+	    	margin-top: 40px;
+	    	margin-right: 5px;
+	    }
+	    .filter{
+	    	font-size: 30px;
+	    	margin: 20px;
+	    	height: 50px;
+	    	color: rgb(132, 38, 60);
+	    	background-image: url("https://us.123rf.com/450wm/mahmud7/mahmud71708/mahmud7170800014/84530246-abstract-dark-blue-background-texture-abstract-radial-gradiant-wallpaper.jpg");
+	    	
+
+
+	    }
+	    #max{
+	    	width: 100px;
+	    	height: 24px;
+	    	border: 2px solid;
+	    	border-radius: 15px;
+	    }
+	    #min{
+	    	width: 100px;
+	    	height: 24px;
+	    	border: 2px solid;
+	    	border-radius: 15px;
+	    	margin-left: 10px;
+	    }
+	    #filt{
+	    	width: 80px;
+	    	height: 40px;
+	    	border: 2px solid green;
+	    	border-radius: 15px;
+	    	margin-left: 8px;
+
+
+	    }
+
+	    .productwrapper {
+        height: auto;
+        width: 90%;
+        /* background-color: green; */
+        margin-left: 5%;
+        margin-bottom: 50px;
+        border-radius: 10px;
+       
+      }
+
+      .product {
+        height: 90%;
+        width: 25%;
+        /* background-color: red; */
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 6.25%;
+        border: 1px solid black;
+      }
+
+      .prodimg {
+        height: 300px;
+        width: 100%;
+        /* background-color: yellow; */
+        overflow: hidden;
+        border-radius: 9px;
+      }
+
+      .product h3,
+      .product p {
+        padding: 5px;
+        padding-left: 10px;
+        font-size: 20px;
+        color: rgb(209, 68, 12);
+      }
+
+      .product p {
+        color:white;
+      }
+       button {
+        padding: 10px;
+        border-radius: 10px;
+        border:2px solid green;
+
+      }
+      #cartproduct{
+      	font-size: 24px;
+      	margin: 20px;
+      	background-color: #C74A68
+      	margin-left:35px;
+      	color: rgb(209, 68, 12);
+
+
+      }
+      #cartheader{
+      	
+      }
+	
+    </style>
+</head>
+<body>
+	<nav id="nav">
+		<div>
+		<img id="logo" src="https://seeklogo.com/images/H/hrx-logo-0BCB89CB63-seeklogo.com.png">
+		<h1 id="header">.hrx</h1>
+           <input
+          type="search"
+          id="search"
+          onkeyup="searchProduct()"
+          placeholder="Search For Products"/>
+
+        
+        <a href="#cart"><img id="cartlogo" class="carts" src="https://img.favpng.com/22/0/3/amazon-com-online-shopping-shopping-cart-shopping-bags-trolleys-png-favpng-qrRCyCbZGDg8PQFvGu2WdreRk.jpg"> </a>
+       <p id="count"> 0 </p>
+
+        <a href="#filt"><h2>Home</h2></a>
+    </div>
+
+</nav>
+<br><br><br><br><br>
+
+         <div class="filter">
+         Filter By :<input type="number" id="min" placeholder="min value"> &nbsp;-&nbsp;
+         <input type="number" id="max" placeholder="max value">
+         <button id="filt" onclick="filterprod()">Filter</button>
+    </div>
+    <br>
+
+
+    <div class="products">
+		
+      <div class="productwrapper" id="productwrapper">
+      	
+      </div>
+    </div>
+    <hr>
+    <hr>
+
+     <div class="products" id="cartproduct">
+      <h1 id="cartheader"><u>Cart<u></h1>
+      <div class="productwrapper" id="cart"></div>
+    </div>
+
+
+	<script src="day 8 assignment.js"></script>
+
+
+</body>
+</html>
